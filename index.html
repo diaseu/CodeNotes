@@ -63,27 +63,30 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
+            <a href="#HTML">
             <h2 class="center black-text"><i class="material-icons">code</i></h2>
             <h5 class="center">HTML</h5>
-
+            </a>
             <p class="light">HTML is the standard markup language for web sites. HTML is used to create the skeleton structure for the front-end of websites.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
+            <a href="#CSS">
             <h2 class="center black-text"><i class="material-icons">format_color_fill</i></h2>
             <h5 class="center">CSS</h5>
-
+            </a>
             <p class="light">CSS is a style sheet language used to described HTML. CSS dresses up the structure (HTML) with color, form, size and more.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
+            <a href="#Git">
             <h2 class="center"><img src="./assets/img/GitHub-Mark-64px.png" alt="Github" width="53px" /></h2>
             <h5 class="center">Git</h5>
-
+            </a>
             <p class="light">Github is a code platform for version control and collaboration. Manage your code over terminal/git bash through git commands</p>
           </div>
         </div>
@@ -95,14 +98,14 @@
 
   <!-- main -->
   <div class="container">
-    <h4>HTML</h4>
+    <h4 id="HTML">HTML</h4>
     HTML (Hyper Text Markup Language) is the standard markup language for websites. HTML elements are building blocks of HTML pages, and are represented by &lt; &gt; tags.
       <ul class="collapsible">
         <li>
           <div class="collapsible-header"><i class="material-icons">filter_drama</i>HTML Basics</div>
           <div class="collapsible-body">
             <span>These are some examples of basic HTML elements.</span>
-            <ul>
+            <ul class="indent">
               <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document.</li>
               <li>The &lt;html&gt; element is the root element of an HTML page.</li>
               <li>The &lt;head&gt; element contains meta information about the HTML page.</li>
@@ -122,10 +125,9 @@
           <div class="collapsible-header"><i class="material-icons">place</i>Semantic Elements</div>
           <div class="collapsible-body">
             <span>A semantic element clearly declares its purpose to the developer, reader and browser. Semantic web allows data to be shared and reused across applications, enterprises and communities. There is no restricting on nesting semantic elements, so article can be nested inside section and vice versa.</span>
-            <p>
-              Examples of semantic elements include:
+            <p>Examples of semantic elements include:</p>
                        
-              <ul>
+              <ul class="indent">
                 <li>&lt;article&gt; - independent, self-contained content, like a blog post or newspaper article</li>
                 <li>&lt;aside&gt; - content aside from page content</li>
                 <li>&lt;details&gt; - additional details that user can show or hide</li>
@@ -146,7 +148,7 @@
 
             <p>
               Non-semantic elements, to compare, are things like:
-              <ul>
+              <ul class="indent">
                 <li>&lt;div&gt;</li>
                 <li>&lt;span&gt;</li>
               </ul>
@@ -154,29 +156,56 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Applying CSS to HTML</div>
+          <div class="collapsible-body">
+            <span>
+              To apply CSS to HTML, the first important aspect is to link to the stylesheet, or include &lt;style&gt; in the <strong>head</strong>.
+              <p class="strong indent">&lt;link rel=&#34;stylesheet&#34; href=&#34;(link here)&#34;&gt;</p>
+              
+
+            </span>
+          </div>
         </li>
+
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Helpful Links</div>
+                  <div class="collapsible-body">
+                    <ol>
+                      <li><a href="https://htmlcheatsheet.com/">HTML Cheat Sheet website</a></li>
+                      <li><a href="https://makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-mega-cheat-sheet.jpg">HTML5 Mega Cheat Sheet</a></li>
+                    </ol>
+                  </div>
+                </li>
       </ul>
 
-    <h4>CSS</h4>
+    <h4 id="CSS">CSS</h4>
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>GIT Terminal Git Bash Commands</div>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>CSS Basics</div>
           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-header"><i class="material-icons">place</i>Commonly used attributes</div>
           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Utilizing style libraries like Bootstrap/Materialize</div>
           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Helpful Links</div>
+          <div class="collapsible-body">
+            <ol>
+              <li><a href="https://websitesetup.org/wp-content/uploads/2019/08/CSS-CHEAT-SHEET-p1-2019-update.png">Beginner's CSS Cheat Sheet</a></li>
+              <li><a href="https://makeawebsitehub.com/wp-content/uploads/2015/10/css3-mega-cheat-sheet.jpg">CSS3 Mega Cheat Sheet</a></li>
+            </ol>  
+          </div>
         </li>
       </ul>
 
 
-    <h4>Git Commands</h4>
+    <h4 id="Git">Git Commands</h4>
     <ul class="collapsible">
       <li>
         <div class="collapsible-header"><i class="material-icons">filter_drama</i></div>

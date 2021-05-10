@@ -30,3 +30,12 @@
   width: 100%;
   height: 100%;
 }
+
+.strong {
+  font-weight: 600;
+}
+
+.indent {
+  margin-left: 100px;
+}
+
