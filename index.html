@@ -15,17 +15,17 @@
 <body>
   <!-- Navbar -->
   <nav class="grey darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">DIA SEU</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CodeNotes</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">HTML, GIT & CSS</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">JQuery</a></li>
-        <li><a href="#">NodeJS/OOP</a></li>
-        <li><a href="#">MySQL</a></li>
-        <li><a href="#">ORM/MVC</a></li>
-        <li><a href="#">NoSQL/PWAs</a></li>
-        <li><a href="#">React</a></li>
-        <li><a href="#">MERN</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">Javascript</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">JQuery</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">NodeJS/OOP</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">MySQL</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">ORM/MVC</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">NoSQL/PWAs</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">React</a></li>
+        <li><a href="#" class="disabled" aria-disabled="true">MERN</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -98,6 +98,8 @@
 
   <!-- main -->
   <div class="container">
+
+    <!-- HTML -->
     <h4 id="HTML">HTML</h4>
     HTML (Hyper Text Markup Language) is the standard markup language for websites. HTML elements are building blocks of HTML pages, and are represented by &lt; &gt; tags.
       <ul class="collapsible">
@@ -158,12 +160,95 @@
         <li>
           <div class="collapsible-header"><i class="material-icons">whatshot</i>Applying CSS to HTML</div>
           <div class="collapsible-body">
-            <span>
-              To apply CSS to HTML, the first important aspect is to link to the stylesheet, or include &lt;style&gt; in the <strong>head</strong>.
-              <p class="strong indent">&lt;link rel=&#34;stylesheet&#34; href=&#34;(link here)&#34;&gt;</p>
-              
+            <!-- Apply CSS to HTML Step 1 -->
+            <p>
+              To apply CSS to HTML, the first important aspect is to include in &lt;head&gt;:
+              <ol>
+                <li>
+                  <span>link to the stylesheet <strong>(preferred)</strong></span>
+                  <div class="codebox">
+                    &lt;link rel=&#34;stylesheet&#34; href=&#34;./assets/css/style.css&#34;&gt;
+                  </div>
+                  <span><i>or</i></span></li>
+                <li>
+                  <span>&lt;style&gt; tag with css directly</span>
+                  <div class="codebox">
+                    &lt;head&gt;<br />
+                    &nbsp;&nbsp; &lt;style&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; p {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: red;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                    &nbsp;&nbsp; &lt;/style&gt;<br />&lt;/head&gt;
+                  </div></li>
+              </ol>
+            </p>
 
-            </span>
+            <br /><br />
+
+            <!-- Apply CSS to HTML Step 2 -->
+            <p>
+              The next important step is to declare classes and IDs:
+              <ol>
+                <!-- Classes -->
+                <li>Classes:
+                  <div class="row">
+                    <!-- Classes applied in HTML -->
+                    <div class="col s6">
+                      Classes applied in HTML (with stylesheet link in <strong>head</strong>):
+                      <div class="codebox2">
+                        &lt;p class="red"&gt;Hello World&lt;/p&gt;
+                      </div>
+                    </div>
+                    <!-- Classes declared in CSS -->
+                    <div class="col s6">
+                      Classes declared in CSS (style.css):
+                      <div class="codebox2">
+                        .red {<br />
+                        &nbsp;&nbsp;color: red;<br />  
+                        }
+                      </div>
+                    </div>
+                  </div>
+                      <div class="row">
+                        <div class="col s12">
+                          Result:
+                          <div class="codebox-result">
+                            <p class="red-text">Hello World</p>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <!-- IDs -->
+                <li>IDs:
+                  <div class="row">
+                    <!-- IDs applied in HTML -->
+                    <div class="col s6">
+                      IDs applied in HTML (with stylesheet link in <strong>head</strong>):
+                      <div class="codebox2">
+                        &lt;p id="first"&gt;Hello World&lt;/p&gt;
+                      </div>
+                    </div>
+                    <!-- IDs declared in CSS -->
+                    <div class="col s6">
+                      IDs declared in CSS (style.css):
+                      <div class="codebox2">
+                        #first {<br />
+                        &nbsp;&nbsp;color: blue;<br />
+                        }
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      Result:
+                      <div class="codebox-result">
+                        <p class="blue-text">Hello World</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </p>
           </div>
         </li>
 
@@ -178,11 +263,21 @@
                 </li>
       </ul>
 
+      <br /><br />
+
+    <!-- CSS -->
     <h4 id="CSS">CSS</h4>
       <ul class="collapsible">
         <li>
           <div class="collapsible-header"><i class="material-icons">filter_drama</i>CSS Basics</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body">
+            <ul class="square indent">
+              <li>Order of css matters (within stylesheet) - latter CSS overwrites earlier CSS</li>
+              <li>Similarly, order of css stylesheets matters too - latter CSS stylesheets overwrites earlier CSS stylesheets</li>
+              <li>Browsers often come with some default values for many css elements. Use a reset "primer" to wipe out those default values. <i>(<a href="https://ucivirtirvfsf-vgg2763.slack.com/files/U0211K688SD/F020KFMKSNB/reset.css">Link to reset.css</a>)</i></li>
+            </ul>
+
+          </div>
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">place</i>Commonly used attributes</div>
@@ -204,7 +299,9 @@
         </li>
       </ul>
 
+      <br /><br />
 
+    <!-- Git -->
     <h4 id="Git">Git Commands</h4>
     <ul class="collapsible">
       <li>
