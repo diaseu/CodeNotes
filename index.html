@@ -343,18 +343,134 @@
         </li>
         <!-- Block vs In-line -->
         <li>
-          <div class="collapsible-header"><i class="material-icons">dns</i>Block elements vs In-line elements</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><i class="material-icons">dns</i>Block elements vs Inline elements</div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s6">
+                <h5>Block-level Element</h5>
+                Block elements always start on a new line and take up the full available width.<br />
+                Examples of block-level elements:
+                <ul class="indent">
+                  <li>&lt;div&gt;</li>
+                  <li>&lt;h1&gt;-&lt;h6&gt;</li>
+                  <li>&lt;p&gt;</li>
+                  <li>&lt;form&gt;</li>
+                  <li>&lt;header&gt;</li>
+                  <li>&lt;footer&gt;</li>
+                  <li>&lt;section&gt;</li>
+                </ul>
+              </div>
+              <div class="col s6">
+                <h5>Inline Element</h5>
+                Inline elements don't start on a new line and only takes up the necessary width.<br />
+                Examples of inline lements:
+                <ul class="indent">
+                  <li>&lt;span&gt;</li>
+                  <li>&lt;a&gt;</li>
+                  <li>&lt;img&gt;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </li>
         
         <li>
           <div class="collapsible-header"><i class="material-icons">description</i>Utilizing style libraries like Bootstrap/Materialize</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body">
+            <p>Bootstrap and Materialize are examples of style libraries that have prebuilt css for ease of use. They allow for easier implementation of layouts and site components, with a simple link to their css stylesheet/js.</p>
+            <!-- Bootstrap code -->
+            <p>Boostrap can be implemented by including:<br />
+            <div class="codebox">
+              <div class="row">
+                <div class="col s1"><h5>CSS</h5></div>
+                <div class="col s11"><span class="strong">in &lt;head&gt;</span><br />
+                  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"&gt;</div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col s1">
+                  <h5>JS</h5>
+                </div>
+                <div class="col s11"><span class="strong">at bottom of &lt;body&gt;</span><br />&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+                crossorigin="anonymous"&gt;&lt;/script&gt;
+                </div>
+              </div>
+            </div></p>
+            <!-- Materialize code -->
+            <p>Materialize can be implemented by including:<br />
+            <div class="codebox">
+              <div class="row">
+                <div class="col s1">
+                  <h5>CSS</h5>
+                </div>
+                <div class="col s11"><span class="strong">in &lt;head&gt;</span><br />
+                  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col s1">
+                  <h5>JS</h5>
+                </div>
+                <div class="col s11"><span class="strong">at bottom of &lt;body&gt;</span><br />&lt;script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+                  crossorigin="anonymous"&gt;&lt;/script&gt;
+                </div>
+              </div>
+            </div>
+            </p>
+          </div>
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">dashboard</i>Grid System</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+          <div class="collapsible-body"><span>Bootstrap and Materialize both use very similar grid systems to build layouts.
+            <div class="row">
+              <div class="col s6">
+                <p>Bootstrap uses a 12-column grid system, that can be implemented by containing 'col' class inside 'row' class
+                  inside 'container' class.</p>
+                  <div class="codebox">
+                    <span class="blue-text">&lt;div class="container"&gt;</span><br />
+                    <span class="red-text">&nbsp;&lt;div class="row"&gt;</span><br />
+                    <span class="green-text">&nbsp;&nbsp;&lt;div class="col"&gt;</span><br />
+                    &nbsp;&nbsp;&nbsp;Column<br />
+                    <span class="green-text">& nbsp;&nbsp;&lt;/div&gt;</span><br />
+                    <span class="green-text">&nbsp;&nbsp;&lt;div class="col"&gt;</span><br />
+                    &nbsp;&nbsp;&nbsp;Column<br />
+                    <span class="green-text">&nbsp;&nbsp;&lt;/div&gt;</span><br />
+                    <span class="green-text">&nbsp;&nbsp;&lt;div class="col"&gt;</span><br />
+                    &nbsp;&nbsp;&nbsp;Column<br />
+                    <span class="green-text">&nbsp;&nbsp;&lt;/div&gt;</span><br />
+                    <span class="red-text">&nbsp;&lt;/div&gt;</span><br />
+                    <span class="blue-text">&lt;/div&gt;</span>
+                  </div><!-- End Codebox-->
+                </div><!--End col s6-->
+              <!-- Materialize s6 -->
+              <div class="col s6">
+                <p>Materialize uses a very similar 12-column grid system, that can be implemented similarly.</p>
+                <div class="codebox">
+                  <span class="blue-text">&lt;div class="container"&gt;</span><br />
+                  <span class="red-text">&nbsp;&lt;div class="row"&gt;</span><br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;div class="col s4"&gt;</span><br />
+                  &nbsp;&nbsp;&nbsp;Column<br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;/div&gt;</span><br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;div class="col s4"&gt;</span><br />
+                  &nbsp;&nbsp;&nbsp;Column<br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;/div&gt;</span><br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;div class="col s4"&gt;</span><br />
+                  &nbsp;&nbsp;&nbsp;Column<br />
+                  <span class="green-text">&nbsp;&nbsp;&lt;/div&gt;</span><br />
+                  <span class="red-text">&nbsp;&lt;/div&gt;</span><br />
+                  <span class="blue-text">&lt;/div&gt;</span>
+                  
+                </div><!-- End Codebox -->
+              </div><!-- End s6 -->
+            </div><!-- End row -->
+            
+          </div>
+          </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">table_view</i>Pseudo-classes</div>
           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -376,10 +492,66 @@
     <!-- Git -->
     <h4 id="Git">Git</h4>
     <ul class="collapsible">
+      <!-- Git Setup -->
       <li>
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Git Commands</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header"><i class="material-icons">build_circle</i>Git Setup</div>
+        <div class="collapsible-body"><span>Git config commands</span>
+          <table>
+            <tr>
+              <td>set username</td>
+              <td>git config --global user.name "Your Name</td>
+            </tr>
+            <tr>
+              <td>set email</td>
+              <td>git config --global user.email "youremail@gmail.com"</td>
+            </tr>
+          </table>
+        </div>
       </li>
+      
+      <li>
+        <div class="collapsible-header"><i class="material-icons">forum</i>Git Commands</div>
+        <div class="collapsible-body"><span>Basic Git Commands to be used through git bash or terminal</span>
+          <table>
+            <tr>
+              <td>create empty Git repo</td>
+              <td>git init &lt;directory&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>clone repo to local machine</strong></td>
+              <td>git clone &lt;repo&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>stage changes for next commit</strong></td>
+              <td>git add  &lt;directory/file&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>Commit staged snapshot with message</strong></td>
+              <td>git commit -m &lt;message&gt;</td>
+            </tr>
+            <tr>
+              <td>check status of files</td>
+              <td>git status </td>
+            </tr>
+            <tr>
+              <td><strong>Fetch files from remote copy into local copy</strong></td>
+              <td>git pull &lt;remote&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>Push commits to repo</td>strong></td>
+              <td>git push &lt;remote&gt; &lt;branch&gt;</td>
+            </tr>
+          </table>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons">groups</i>Git Collaboration</div>
+        <div class="collapsible-body"><span>Git enables multiple people to work on a repository, through the use of branches and rebase to resolve merge conflicts. (<a href="https://www.atlassian.com/git/tutorials/comparing-workflows"><i>Relevant link</i></a>)</span>
+        </div>
+      </li>
+
+
       <li>
         <div class="collapsible-header"><i class="material-icons">whatshot</i>Git Cheat Sheet</div>
         <div class="collapsible-body">
