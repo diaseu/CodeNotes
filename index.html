@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Week 1 - Study Notes</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">DIA SEU</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">HTML, GIT & CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">JQuery</a></li>
+        <li><a href="#">NodeJS/OOP</a></li>
+        <li><a href="#">MySQL</a></li>
+        <li><a href="#">ORM/MVC</a></li>
+        <li><a href="#">NoSQL/PWAs</a></li>
+        <li><a href="#">React</a></li>
+        <li><a href="#">MERN</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Week 1</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+  <!-- Header -->
+  <header class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">HTML, GIT & CSS</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">Week 1 Topic on Front-End Coding</h5>
+      </div>
+      <br><br>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Topics section -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <h3>Topics covered this week:</h3>
+      </div>
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">HTML</h5>
+
+            <p class="light">HTML is the standard markup language for web sites. HTML is used to create the skeleton structure for the front-end of websites.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">format_color_fill</i></h2>
+            <h5 class="center">CSS</h5>
+
+            <p class="light">CSS is a style sheet language used to described HTML. CSS dresses up the structure (HTML) with color, form, size and more.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><img src="./assets/img/GitHub-Mark-64px.png" alt="Github" width="53px" /></h2>
+            <h5 class="center">Git</h5>
+
+            <p class="light">Github is a code platform for version control and collaboration. Manage your code over terminal/git bash through git commands</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <!-- main -->
+  <div class="container">
+    <h4>HTML</h4>
+    HTML (Hyper Text Markup Language) is the standard markup language for websites. HTML elements are building blocks of HTML pages, and are represented by &lt; &gt; tags.
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>HTML Basics</div>
+          <div class="collapsible-body">
+            <span>These are some examples of basic HTML elements.</span>
+            <ul>
+              <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document.</li>
+              <li>The &lt;html&gt; element is the root element of an HTML page.</li>
+              <li>The &lt;head&gt; element contains meta information about the HTML page.</li>
+              <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+              <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings,paragraphs, images, hyperlinks, tables, lists, etc.</li>
+              <li>The &lt;h1&gt; element defines a large heading</li>
+              <li>The &lt;p&gt; element defines a paragraph</li>
+            </ul>
+
+            <p>
+              All websites should have at least the following elements: !DOCTYPE html declaration, html, head, title, body.<br />
+              In VS Code, any HTML file types can have the basics populated by typing in <strong>!</strong> and pressing enter.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Semantic Elements</div>
+          <div class="collapsible-body">
+            <span>A semantic element clearly declares its purpose to the developer, reader and browser. Semantic web allows data to be shared and reused across applications, enterprises and communities. There is no restricting on nesting semantic elements, so article can be nested inside section and vice versa.</span>
+            <p>
+              Examples of semantic elements include:
+                       
+              <ul>
+                <li>&lt;article&gt; - independent, self-contained content, like a blog post or newspaper article</li>
+                <li>&lt;aside&gt; - content aside from page content</li>
+                <li>&lt;details&gt; - additional details that user can show or hide</li>
+                <li>&lt;figcaption&gt; - caption for figure</li>
+                <li>&lt;figure&gt; - self-contained content like photos, diagrams, code listings, etc</li>
+                <li>&lt;footer&gt; - footer typically contains authorship, copyright, contact, sitemap, back to top, etc. You can have multiple footers</li>
+                <li>&lt;header&gt; - container for introductory content or set of navigational links. Cannot be placed in footer, address or header</li>
+                <li>&lt;main&gt; - main content</li>
+                <li>&lt;mark&gt; - marked/highlighted text</li>
+                <li>&lt;nav&gt; - navigation links</li>
+                <li>&lt;section&gt; - thematic grouping of contenting, typically with a heading</li>
+                <li>&lt;summary&gt; - visible heading for details element</li>
+                <li>&lt;time&gt; - time</li>
+                <li>&lt;table&gt;</li>
+                <li>&lt;form&gt;</li>
+              </ul>
+            </p>
+
+            <p>
+              Non-semantic elements, to compare, are things like:
+              <ul>
+                <li>&lt;div&gt;</li>
+                <li>&lt;span&gt;</li>
+              </ul>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+
+    <h4>CSS</h4>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>GIT Terminal Git Bash Commands</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+
+
+    <h4>Git Commands</h4>
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i></div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Git Cheat Sheet</div>
+        <div class="collapsible-body">
+              <div class="iframe-container">
+                <iframe class="responsive-iframe" src="https://drive.google.com/file/d/1i2B614U1IklLI7a-3RWO61uvmlcDT56C/preview"
+                  width="640" height="480"></iframe>
+              </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+  </div>
+
+  <div class="spacer" style="margin: 300px;"></div>
+
+  <!-- footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Dia Seu
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./assets/js/materialize.js"></script>
+  <script src="./assets/js/init.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('.collapsible');
+          var instances = M.Collapsible.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+          $('.collapsible').collapsible();
+        });
+      
+  </script>
+
+
+</body>
+</html>
